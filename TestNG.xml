@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="practice" verbose="3">
+
+	<test name="Test in FF">
+		<classes>
+			<class name="com.webtek.testcases.SanityTest1" />
+			
+		</classes>
+	</test>
+	</suite>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-practice">
+              <span class="suite-name border-failed">practice</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-practice">
+                    <span>C:\Users\gargi\workspace\practice\TestNG.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-practice">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-practice">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-practice">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-practice">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-practice">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-practice">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-practice" class="hide-methods failed suite-practice"> (hide)</a> <!-- hide-methods failed suite-practice -->
+                      <a href="#" panel-name="suite-practice" class="show-methods failed suite-practice"> (show)</a> <!-- show-methods failed suite-practice -->
+                    </span>
+                    <div class="method-list-content failed suite-practice">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-practice" title="com.webtek.testcases.SanityTest1" hash-for-method="UserSignUpBeforePurchase(XXX, YYY, password, XXX, YYY, companyXXX, Kalikapur, Ruby, DURGAPUR, 09990, 9748822983, DURGAPUR, DR...)">UserSignUpBeforePurchase(XXX, YYY, password, XXX, YYY, companyXXX, Kalikapur, Ruby, DURGAPUR, 09990, 9748822983, DURGAPUR, DR...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-practice" title="com.webtek.testcases.SanityTest1" hash-for-method="UserSignUpBeforePurchase(ABC, DEF, password, ABC, DEF, company, Kalikapur, Ruby, kolkata, 00000, 9748888983, kolkata, DRESSES...)">UserSignUpBeforePurchase(ABC, DEF, password, ABC, DEF, company, Kalikapur, Ruby, kolkata, 00000, 9748888983, kolkata, DRESSES...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-practice -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-practice" class="panel practice">
+          <div class="suite-practice-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.webtek.testcases.SanityTest1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserSignUpBeforePurchase(XXX, YYY, password, XXX, YYY, companyXXX, Kalikapur, Ruby, DURGAPUR, 09990, 9748822983, DURGAPUR, DR...)">
+                  </a> <!-- UserSignUpBeforePurchase(XXX, YYY, password, XXX, YYY, companyXXX, Kalikapur, Ruby, DURGAPUR, 09990, 9748822983, DURGAPUR, DR...) -->
+                  <span class="method-name">UserSignUpBeforePurchase</span>
+                  <span class="parameters">(XXX, YYY, password, XXX, YYY, companyXXX, Kalikapur, Ruby, DURGAPUR, 09990, 9748822983, DURGAPUR, DRESSES, Evening dress, L, Pink)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 57 milliseconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;gargi-PC&apos;, ip: &apos;192.168.16.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_40&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=38.0.5, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a664ef84-3e5f-43ea-a19b-959b915e7090
+*** Element info: {Using=class name, value=login}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:433)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at com.webtek.actions.SignUpBeforePurchaseAction.execute_signupUser(SignUpBeforePurchaseAction.java:31)
+	at com.webtek.testcases.SanityTest1.UserSignUpBeforePurchase(SanityTest1.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;gargi-PC&apos;, ip: &apos;192.168.16.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_40&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/gargi/AppData/Local/Temp/anonymous8796447442198751362webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12343)
+	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/gargi/AppData/Local/Temp/anonymous8796447442198751362webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9061)
+	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/gargi/AppData/Local/Temp/anonymous8796447442198751362webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9208)
+	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/gargi/AppData/Local/Temp/anonymous8796447442198751362webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9155)
+	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/gargi/AppData/Local/Temp/anonymous8796447442198751362webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:12128)
+	at &lt;anonymous class&gt;.createHandlerFunc/&lt;(file:///C:/Users/gargi/AppData/Local/Temp/anonymous8796447442198751362webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2058)
+	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/gargi/AppData/Local/Temp/anonymous8796447442198751362webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2391)
+	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/gargi/AppData/Local/Temp/anonymous8796447442198751362webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1227)
+	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/gargi/AppData/Local/Temp/anonymous8796447442198751362webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1681)
+	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/gargi/AppData/Local/Temp/anonymous8796447442198751362webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1529)
+	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/gargi/AppData/Local/Temp/anonymous8796447442198751362webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1397)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserSignUpBeforePurchase(ABC, DEF, password, ABC, DEF, company, Kalikapur, Ruby, kolkata, 00000, 9748888983, kolkata, DRESSES...)">
+                  </a> <!-- UserSignUpBeforePurchase(ABC, DEF, password, ABC, DEF, company, Kalikapur, Ruby, kolkata, 00000, 9748888983, kolkata, DRESSES...) -->
+                  <span class="method-name">UserSignUpBeforePurchase</span>
+                  <span class="parameters">(ABC, DEF, password, ABC, DEF, company, Kalikapur, Ruby, kolkata, 00000, 9748888983, kolkata, DRESSES, Summer dress, S, Orange)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 385 milliseconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;gargi-PC&apos;, ip: &apos;192.168.16.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_40&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=38.0.5, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a664ef84-3e5f-43ea-a19b-959b915e7090
+*** Element info: {Using=css selector, value=#lastname}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
+	at com.webtek.actions.SignUpBeforePurchaseAction.execute_signupUser(SignUpBeforePurchaseAction.java:61)
+	at com.webtek.testcases.SanityTest1.UserSignUpBeforePurchase(SanityTest1.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;gargi-PC&apos;, ip: &apos;192.168.16.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_40&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/gargi/AppData/Local/Temp/anonymous8796447442198751362webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12343)
+	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/gargi/AppData/Local/Temp/anonymous8796447442198751362webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9061)
+	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/gargi/AppData/Local/Temp/anonymous8796447442198751362webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9208)
+	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/gargi/AppData/Local/Temp/anonymous8796447442198751362webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9155)
+	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/gargi/AppData/Local/Temp/anonymous8796447442198751362webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:12128)
+	at &lt;anonymous class&gt;.createHandlerFunc/&lt;(file:///C:/Users/gargi/AppData/Local/Temp/anonymous8796447442198751362webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2058)
+	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/gargi/AppData/Local/Temp/anonymous8796447442198751362webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2391)
+	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/gargi/AppData/Local/Temp/anonymous8796447442198751362webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1227)
+	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/gargi/AppData/Local/Temp/anonymous8796447442198751362webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1681)
+	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/gargi/AppData/Local/Temp/anonymous8796447442198751362webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1529)
+	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/gargi/AppData/Local/Temp/anonymous8796447442198751362webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1397)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-practice-class-failed -->
+        </div> <!-- panel practice -->
+        <div panel-name="test-xml-practice" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\gargi\workspace\practice\TestNG.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;3&quot; name=&quot;practice&quot;&gt;
+  &lt;test name=&quot;Test in FF&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.webtek.testcases.SanityTest1&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test in FF --&gt;
+&lt;/suite&gt; &lt;!-- practice --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-practice" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for practice</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test in FF (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-practice" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for practice</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-practice" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for practice</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_practice');
+function tableData_practice() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'UserSignUpBeforePurchase')
+data.setCell(0, 2, 'com.webtek.testcases.SanityTest1')
+data.setCell(0, 3, 11305);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'UserSignUpBeforePurchase')
+data.setCell(1, 2, 'com.webtek.testcases.SanityTest1')
+data.setCell(1, 3, 67);
+window.suiteTableData['practice']= { tableData: data, tableDiv: 'times-div-practice'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <div id="times-div-practice">
+              </div> <!-- times-div-practice -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-practice" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for practice</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-practice" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-practice" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtek.testcases.SanityTest1</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">Setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">UserSignUpBeforePurchase(ABC, DEF, password, ABC, DEF, company, Kalikapur, Ruby, kolkata, 00000, 9748888983, kolkata, DRESSES...)</span>
+                <span class="method-start">37335 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">UserSignUpBeforePurchase(XXX, YYY, password, XXX, YYY, companyXXX, Kalikapur, Ruby, DURGAPUR, 09990, 9748822983, DURGAPUR, DR...)</span>
+                <span class="method-start">48708 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">teardown</span>
+                <span class="method-start">48863 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

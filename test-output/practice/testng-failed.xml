@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="3" name="Failed suite [practice]">
+  <test name="Test in FF(failed)">
+    <classes>
+      <class name="com.webtek.testcases.SanityTest1">
+        <methods>
+          <include name="teardown"/>
+          <include name="UserSignUpBeforePurchase" invocation-numbers="0 1"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.webtek.testcases.SanityTest1 -->
+    </classes>
+  </test> <!-- Test in FF(failed) -->
+</suite> <!-- Failed suite [practice] -->

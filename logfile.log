@@ -1,0 +1,17 @@
+2015-06-21 12:51:57,342 INFO  [Log] Browser opening successfully with desired URL 
+2015-06-21 12:51:57,756 INFO  [Log] **************************************************************************** 
+2015-06-21 12:51:57,756 INFO  [Log] **************************************************************************** 
+2015-06-21 12:51:57,756 INFO  [Log] Start Test Method     UserSignUp                                      
+2015-06-21 12:51:57,756 INFO  [Log] **************************************************************************** 
+2015-06-21 12:51:57,756 INFO  [Log] **************************************************************************** 
+2015-06-21 12:51:57,848 INFO  [Log] New user Registration started 
+2015-06-21 12:52:09,052 INFO  [Log] SignUpAction not executed successfully--User registration incomplete 
+2015-06-21 12:52:09,121 INFO  [Log] **************************************************************************** 
+2015-06-21 12:52:09,121 INFO  [Log] **************************************************************************** 
+2015-06-21 12:52:09,121 INFO  [Log] Start Test Method     UserSignUp                                      
+2015-06-21 12:52:09,121 INFO  [Log] **************************************************************************** 
+2015-06-21 12:52:09,121 INFO  [Log] **************************************************************************** 
+2015-06-21 12:52:09,129 INFO  [Log] New user Registration started 
+2015-06-21 12:52:09,187 INFO  [Log] SignUpAction not executed successfully--User registration incomplete 
+2015-06-21 12:52:09,330 INFO  [RetryExec] I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://127.0.0.1:7055: The target server failed to respond 
+2015-06-21 12:52:09,330 INFO  [RetryExec] Retrying request to {}->http://127.0.0.1:7055 
